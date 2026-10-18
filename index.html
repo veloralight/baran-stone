@@ -1,71 +1,133 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<!DOCTYPE html><html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>باران | دکور سنگی</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header>
+<body><header>
   <a class="logo" href="#">باران <span>STONE DECOR</span></a>
   <nav>
     <a href="#products">محصولات</a>
     <a href="#portfolio">نمونه‌کارها</a>
     <a href="#contact">ارتباط با ما</a>
   </nav>
-</header>
-
-<section class="hero">
+</header><section class="hero">
   <p class="gold">زیبایی در جزئیات</p>
   <h1>دکور سنگی <span>باران</span></h1>
   <p>انتخابی خاص برای زیباتر کردن فضای خانه و محل کار</p>
   <a class="button" href="#products">مشاهده محصولات</a>
-</section>
-
-<section id="products">
+</section><section id="products">
   <h2>محصولات دکوراتیو</h2>
-  <p class="muted">برای اطلاع از قیمت روز هر محصول پیام بدهید.</p>
-  <div class="products">
-    <article class="product">
-  <div class="product-image">
-    <img src="images/IMG_20261018_230521_441.jpg" alt="جاشمعی دیواری باران" style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">
-  </div>
-  <h3>جاشمعی دیواری</h3>
-  <p>قیمت: ۲۵۰٬۰۰۰ تومان</p>
-  <a class="button" href="https://rubika.ir/arsam6262" target="_blank" rel="noopener noreferrer">سفارش در روبیکا</a>
-    </article>
-
-    <article class="product">
-      <div class="product-image">عکس محصول ۲</div>
-      <h3>محصول شماره ۲</h3>
-      <p>قیمت: تماس بگیرید</p>
-      <a class="button" href="https://rubika.ir/arsam6262" target="_blank">سفارش در روبیکا</a>
-    </article>
-
-    <article class="product">
-      <div class="product-image">عکس محصول ۳</div>
-      <h3>محصول شماره ۳</h3>
-      <p>قیمت: تماس بگیرید</p>
-      <a class="button" href="https://rubika.ir/arsam6262" target="_blank">سفارش در روبیکا</a>
-    </article>
-  </div>
-</section>
-
-<section id="portfolio" class="portfolio">
+  <p class="muted">محصول موردنظرت رو انتخاب کن و برای سفارش تماس بگیر یا در روبیکا پیام بده.</p>
+  <div class="products" id="product-list"></div>
+</section><section id="portfolio" class="portfolio">
   <h2>نمونه‌کارها</h2>
   <p>به‌زودی عکس پروژه‌ها و چیدمان‌های اجراشده در این بخش قرار می‌گیرند.</p>
-</section>
-
-<section id="contact">
+</section><section id="contact">
   <h2>برای سفارش آماده‌ای؟</h2>
-  <p>از محصول موردنظرت اسکرین‌شات بگیر و در روبیکا برای ما بفرست.</p>
-  <a class="button" href="https://rubika.ir/arsam6262" target="_blank">پیام در روبیکا</a>
-</section>
+  <p>اسم یا عکس محصول موردنظرت رو برای ما بفرست.</p>
+  <p>
+    <a class="button" href="tel:09380082594">تماس تلفنی</a>
+    <a class="button" href="https://rubika.ir/arsam6262" target="_blank" rel="noopener noreferrer">پیام در روبیکا</a>
+  </p>
+</section><footer>باران · دکور سنگی</footer><script>
+const products = [
+  { name: "جاشمعی دیواری", price: "۲۵۰٬۰۰۰ تومان", image: "images/IMG_20261018_230521_441.jpg" },
+  { name: "محصول شماره ۲", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۵", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۶", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۷", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۸", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۹", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۰", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۱", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۲", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۳", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۴", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۵", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۶", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۷", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۸", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۱۹", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۰", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۱", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۲", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۳", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۴", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۵", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۶", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۷", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۸", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۲۹", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۰", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۱", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۲", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۳", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۴", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۵", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۶", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۷", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۸", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۳۹", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۰", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۱", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۲", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۳", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۴", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۵", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۶", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۷", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۸", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۴۹", price: "قیمت را وارد کنید", image: "" },
+  { name: "محصول شماره ۵۰", price: "قیمت را وارد کنید", image: "" }
+];
 
-<footer>باران · دکور سنگی</footer>
+const list = document.getElementById("product-list");
 
-<script src="script.js"></script>
-</body>
+products.forEach((product, index) => {
+  const card = document.createElement("article");
+  card.className = "product";
+
+  const photo = document.createElement("div");
+  photo.className = "product-image";
+  photo.style.cssText = "width:100%; min-height:180px; overflow:hidden; display:flex; align-items:center; justify-content:center;";
+
+  if (product.image) {
+    const img = document.createElement("img");
+    img.src = product.image;
+    img.alt = product.name;
+    img.loading = "lazy";
+    img.style.cssText = "width:100%; height:200px; object-fit:cover; border-radius:inherit;";
+    photo.appendChild(img);
+  } else {
+    photo.textContent = "عکس محصول " + (index + 1);
+  }
+
+  const title = document.createElement("h3");
+  title.textContent = product.name;
+
+  const price = document.createElement("p");
+  price.textContent = "قیمت: " + product.price;
+
+  const rubika = document.createElement("a");
+  rubika.className = "button";
+  rubika.href = "https://rubika.ir/arsam6262";
+  rubika.target = "_blank";
+  rubika.rel = "noopener noreferrer";
+  rubika.textContent = "سفارش در روبیکا";
+  rubika.style.cssText = "display:inline-block; margin:4px;";
+
+  const call = document.createElement("a");
+  call.className = "button";
+  call.href = "tel:09380082594";
+  call.textContent = "تماس تلفنی";
+  call.style.cssText = "display:inline-block; margin:4px;";
+
+  card.append(photo, title, price, rubika, call);
+  list.appendChild(card);
+});
+</script><script src="script.js"></script></body>
 </html>
